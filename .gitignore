@@ -1,0 +1,21 @@
+# Arquivos e pastas do Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env
+
+# Arquivos de banco de dados
+database/*.db
+database/migrations/
+
+# Configurações do VS Code
+.vscode/
+
+# Logs e arquivos temporários
+logs/
+*.log
+*.tmp
+
+# Configurações do Docker (se for usar)
+docker-compose.override.yml

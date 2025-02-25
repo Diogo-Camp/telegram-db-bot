@@ -16,6 +16,12 @@ services:
       - "5432:5432"
     volumes:
       - pg_data:/var/lib/postgresql/data
+    networks:
+      - taskforge_network  # 🚀 Adicionando a rede compartilhada
 
 volumes:
   pg_data:
+
+networks:
+  taskforge_network:
+    external: true  # 🚀 Define que esta rede pode ser compartilhada entre projetos
